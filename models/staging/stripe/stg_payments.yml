@@ -1,0 +1,10 @@
+version: 2
+
+models:
+ - name: stg_payments
+   description: Staged payments data from stripe.
+   columns:
+    - name: payment_id
+      description: Primary key for payments. 
+    - name: order_id
+      description: Foreign key referencing fct_orders.order_id
